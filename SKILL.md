@@ -1,7 +1,6 @@
 ---
 name: agentic-support
-description: Systematic support case management with documentation, runbooks, and knowledge capture
-tags: [support, documentation, cases, runbooks]
+description: Systematic support case management with documentation, runbooks, and knowledge capture. Use when customer reports bug/issue, investigating production problem, documenting incidents, creating runbooks for recurring issues, or tracking support history per customer.
 ---
 
 # agentic-support
