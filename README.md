@@ -38,7 +38,7 @@ support/
 │   └── customer-name/
 │       ├── _customer-info.md   # Customer profile
 │       └── S###-case.md        # Resolved case files
-└── runbooks/                   # Reusable solution patterns
+└── runbooks/                   # Reusable runbooks
     ├── INDEX.md                # Runbook index
     └── R###-title.md           # Runbook files
 ```
@@ -46,11 +46,11 @@ support/
 ## Case Lifecycle
 
 ```
-1. Report → /agentic-support create
+1. Report → /agentic-support find-similar (search first)
    ↓
-2. Investigate → Document in case file
+2. Open → /agentic-support create
    ↓
-3. Check patterns → /agentic-support find-similar
+3. Investigate → Document in case file
    ↓
 4. Fix → Apply solution
    ↓
@@ -73,25 +73,25 @@ support/
 
 ### Creating a case
 ```bash
-/agentic-support create intercambio-ccenglish "Agent responses returning 204"
+/agentic-support create acme-language-school "Checkout returns 500"
 ```
-→ Creates `inbound/S005-agent-204.md`
+→ Creates `inbound/S005-checkout-500.md`
 
 ### Finding similar issues
 ```bash
-/agentic-support find-similar "204 empty response"
+/agentic-support find-similar "checkout 500 error"
 ```
 → Shows related cases and applicable runbooks
 
 ### Resolving and creating runbook
 ```bash
 /agentic-support resolve S005
-/agentic-support runbook-create S005 "Missing scopes cause 204 responses"
+/agentic-support runbook-create S005 "Missing scope causes checkout 500"
 ```
 → Moves case to customer folder, creates reusable runbook
 
 ## See Also
 
-- [Main skill file](agentic-support.md) — Full documentation
+- [Main skill file](SKILL.md) — Full documentation
 - [reference/](reference/) — Detailed sub-command docs
 - [agentic-sql](../agentic-sql/) — Similar pattern for SQL queries
