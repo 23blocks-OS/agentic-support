@@ -124,4 +124,4 @@ See [CHANGELOG.md](CHANGELOG.md). Contributions are welcome; see [CONTRIBUTING.m
 
 ## License
 
-This repository does not include a LICENSE file yet.
+MIT. See [LICENSE](LICENSE).
