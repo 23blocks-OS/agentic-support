@@ -2,6 +2,11 @@
 
 All notable changes to this skill are documented here. Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.1]
+
+### Changed
+- A case that needs a data change goes through the `agentic-sql` write door (`/agentic-sql write`): propose, a person approves, then apply. The agent never approves and records the request id and outcome in the case file. Pointer only; the steps live in `agentic-sql`. Design: AI Maestro backlog F037.
+
 ## [1.1.0]
 
 ### Added
